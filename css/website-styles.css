@@ -1,91 +1,110 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2500px;
+}
+
+.home-hero-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('/images/bg/lambo-bg.jpg');
+    transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .navbar {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  background-color: transparent !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent !important;
 }
 
-/*
-.bg-dark {
-  background-color: #6EC5E9 !important;
-} */
 .brand-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .name-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .name-container>h2 {
-  padding: 0;
-  padding-top: 10px;
-  padding-left: 0px;
-  font-size: 0.75em;
-  text-decoration: none;
-  font-family: 'Syncopate', sans-serif;
-  color: #000000;
-  margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-left: 0px;
+    font-size: 0.75em;
+    text-decoration: none;
+    font-family: 'Syncopate', sans-serif;
+    color: #e3e3e3;
+    margin: 0;
 }
 
 .logo {
-  width: 75px;
-  left: 15px;
+    width: 75px;
+    left: 15px;
 }
 
 .nav-item {
-  border-left: 1px solid #000000 !important;
-  padding: 1px !important;
+    padding: 1px !important;
 }
 
 .nav-item:first-of-type {
-  border-left: none !important;
+    border-left: none !important;
 }
 
 .active>a {
-  color: #000000 !important;
+    color: #FF9724 !important;
 }
 
 .nav-link {
-  font-size: 1.25em;
-  font-family: 'Open Sans', sans-serif;
-  color: #d3d3d3 !important;
-  padding: 1px;
+    font-size: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    color: #e3e3e3 !important;
+    text-shadow: 1px padding: 1px;
 }
 
 @media only screen and (min-width: 901px) {
-  .navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
-  }
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
 
-  .name-container {
-    padding-left: 15px;
-  }
+    .nav-item {
+        border-left: 1px solid #000000 !important;
+    }
 
-  .brand-container {
-    flex-direction: row;
-  }
+    .name-container {
+        padding-left: 15px;
+    }
 
-  .name-container>h2 {
-    padding-top: 0px;
-  }
+    .brand-container {
+        flex-direction: row;
+    }
 
-  .header-container {
-    height: 150px;
-  }
+    .name-container>h2 {
+        padding-top: 0px;
+    }
 
-  .name-container>h2 {
-    font-size: 2em;
-  }
+    .header-container {
+        height: 150px;
+    }
+
+    .name-container>h2 {
+        font-size: 2em;
+    }
 }
