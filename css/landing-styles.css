@@ -1,44 +1,8 @@
-.home-hero-bg {
-    position: absolute;
-    left: 0;
+.home-bg {
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    z-index: -1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
         url('/images/bg/lambo-bg.jpg');
-    transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-.landing-header {
-    position: absolute;
-    left: auto;
-    top: auto;
-    width: 100%;
-    height: 75%;
-    color: #e3e3e3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.landing-header>h2 {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    text-align: center;
-}
-
-.landing-header>p {
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    text-align: center;
 }
 
 .get-started-button {
@@ -54,17 +18,45 @@
     color: #a9a9a9;
 }
 
+.what-we-do-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: #e9e9e9;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('/images/bg/mustang-bg.jpg');
+}
+
+.what-we-do-section>p {
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.what-we-do-section>h2 {
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 @media only screen and (min-width: 901px) {
-    .landing-header {
-        height: 80%;
-    }
 
-    .landing-header>h2 {
-        width: 60%;
-        font-size: 3em;
-    }
-
-    .landing-header>p {
-        width: 45%;
+    /* .what-we-do-section {
+        height: 100%;
+    } */
+    .what-we-do-section>p {
+        width: 75%;
     }
 }
