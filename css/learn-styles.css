@@ -12,7 +12,7 @@
 
 .lesson-card-brick {
     /* Masonry bricks or child elements */
-    background-color: #eee;
+    background-color: #F8F8FF;
     display: inline-block;
     width: 100%;
     margin-right: 10px;
@@ -30,8 +30,20 @@
     margin: 10px;
 }
 
+.learn-content {
+    padding-top: 20px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    background-color: #F8F8FF;
+}
+
+.learn-content>h2 {
+    text-align: center;
+}
+
 .lesson-card>img {
     width: 45%;
+    height: 50%;
     margin-left: 5px;
     border: 1px solid #e3e3e3;
     border-radius: 4px;
@@ -106,7 +118,16 @@
 }
 
 @media only screen and (min-width: 901px) {
+    .learn-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .masonry {
         column-count: 2 !important;
+        padding-right: 25px;
+        padding-left: 25px;
+        width: 90%;
     }
 }

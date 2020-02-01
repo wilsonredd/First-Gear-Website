@@ -5,4 +5,63 @@
         url('/images/bg/gtr-bg.jpg');
 }
 
-@media only screen and (min-width: 901px) {}
+.submit-button {
+    background-color: #FF9724 !important;
+}
+
+.subscribe-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    justify-content: center;
+}
+
+.subscribe-content>h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.subscribe-form {
+    padding: 10px;
+}
+
+.subscribe-section {
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+}
+
+.benefits-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.benefits-section>h2 {
+    ma text-align: center;
+}
+
+.benefits-section>ul {
+    margin-top: 20px;
+    /* flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 10px; */
+    list-style-position: inside;
+}
+
+@media only screen and (min-width: 901px) {
+    .form-container {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .benefits-section>ul {
+        columns: 2;
+    }
+}
