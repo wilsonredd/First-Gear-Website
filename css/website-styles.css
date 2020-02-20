@@ -22,6 +22,10 @@ body {
     background-color: #f8f8ff;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .navbar {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -79,7 +83,6 @@ body {
 .first-gear-header {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     position: absolute;
     left: 0;
@@ -106,19 +109,25 @@ body {
 
 .first-gear-footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100px;
     width: 100%;
-    /* top: 200vh; */
     background-color: #a9a9a9;
     color: #e9e9e9;
 }
 
 .first-gear-footer>p {
+    margin-bottom: 0;
+}
+
+.first-gear-footer>a>p {
     text-align: center;
     padding-right: 10px;
     padding-left: 10px;
+    margin-bottom: 0;
+    color: #e9e9e9;
 }
 
 .first-gear-content {
@@ -127,8 +136,6 @@ body {
     position: absolute;
     top: 100vh;
     width: 100% !important;
-    /* min-height: 100vh; */
-    /* border: 1px solid #000000; */
 }
 
 @media only screen and (min-width: 901px) {
@@ -171,10 +178,6 @@ body {
         font-size: 2em;
     }
 
-    /*
-    .first-gear-header {
-        height: 80%;
-    } */
     .first-gear-header>h2 {
         width: 60%;
         font-size: 3em;
